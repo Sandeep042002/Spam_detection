@@ -97,7 +97,7 @@ def main():
         params = load_params(params_path="params.yaml")
         test_size = params["data_ingestion"]["test_size"]
         # test_size = 0.2
-        data_path = "https://raw.githubusercontent.com/Sandeep042002/DATASET/refs/heads/main/spam.csv?token=GHSAT0AAAAAADCDKXCKGPVUPDKGW7EVJDZIZ73KEQQ"
+        data_path = "https://raw.githubusercontent.com/Sandeep042002/DATASET/refs/heads/main/spam.csv?token=GHSAT0AAAAAADCDKXCL4XTQ5HU4D4PYVW4AZ73KROA"
         df = load_data(data_url=data_path)
         final_df = preprocess_data(df)
         train_data, test_data = train_test_split(
